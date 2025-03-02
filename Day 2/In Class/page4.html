@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Fourth Web Page</title>
+        <link rel="stylesheet" href="style.css">
+        <!--<script type="module" src="scripts.js"></script>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <div id="container">
+            <header style="font-size: 60px; color: #fff;">My Web Site Brand</header>
+        </div>
+    </head>
+    <body>
+        <!--Nav Bar-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page2.html">About</a></li>
+                <li><a href="page4.html">Gallery</a></li>
+                <li><a href="page3.html">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h1>My Fourth Heading</h1>
+            <p>My Fourth paragraph.</p>
+
+            <ul id="album">
+                <!--<li id="photo"><img src="images/images/winterland1.jpg" alt=""></li>
+                <li id="photo"><img src="images/images/winterland2.jpg" alt=""></li>
+                <li id="photo"><img src="images/images/winterland3.jpg" alt=""></li>
+                <li id="photo"><img src="images/images/winterland4.jpg" alt=""></li>
+                <li id="photo"><img src="images/images/winterland5.jpg" alt=""></li>
+                <li id="photo"><img src="images/images/winterland6.jpg" alt=""></li>-->
+            </ul>
+            <!-- Information Box -->
+            <div id="infoBox" class="info-box">
+                <h2 id="infoTitle"></h2>
+                <p id="infoText"></p>
+                <a href="#" id="closeInfo">Close</a>
+            </div>
+        </main>
+    </body>
+    <footer>&copy; Copyright 2020</footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    var photos = [];
+    var imageList = [];
+    var captions = [];
+    var hoverTexts = [];
+    var descriptions = [];
+
+    var captionTexts = [
+        "Beautiful Winter", "Snow Land", "Winter Road",
+        "Frosty Morning", "Frozen Lake", "Icicles Hanging"
+    ];
+
+    var descTexts = [
+        "A beautiful winter landscape covered in snow.",
+        "Most of plants and animals are having their hibernation period...",
+        "A quiet road covered in a thick layer of snow.",
+        "Sunlight glows through frozen trees in the morning.",
+        "A still lake, frozen in time.",
+        "Icicles form beautiful patterns on the trees."
+    ];
+
+    for (var i = 0; i < captionTexts.length; i++) {
+        photos.push("<img src='images/images/winterland" + (i + 1) + ".jpg' alt='" + captionTexts[i] + "'>");
+        captions.push("<div class='caption'>" + captionTexts[i] + "</div>");
+        hoverTexts.push("<div class='hover-text'>" + captionTexts[i] + "</div>");
+        descriptions.push(descTexts[i]);
+
+        var imageItem = "<li class='photo' data-title='" + captionTexts[i] + "' data-desc='" + descriptions[i] + "'>" +
+            photos[i] + hoverTexts[i] + "<div class='desc-text'>" + descriptions[i] + "</div>" + captions[i] + "</li>";
+
+        imageList.push(imageItem);
+    }
+
+    document.getElementById("album").innerHTML = imageList.join("");
+
+    // Handle Click to Open Info Box
+    var infoBox = document.getElementById("infoBox");
+    var infoTitle = document.getElementById("infoTitle");
+    var infoText = document.getElementById("infoText");
+    var closeInfo = document.getElementById("closeInfo");
+
+    document.querySelectorAll(".desc-text").forEach(desc => {
+        desc.addEventListener("click", function () {
+            infoTitle.textContent = this.closest(".photo").getAttribute("data-title");
+            infoText.textContent = this.closest(".photo").getAttribute("data-desc");
+            infoBox.style.display = "block";
+            document.body.classList.add("info-active"); // Darken background
+        });
+    });
+
+    closeInfo.addEventListener("click", function (e) {
+        e.preventDefault();
+        infoBox.style.display = "none";
+        document.body.classList.remove("info-active"); // Remove dark background
+    });
+});
+    </script>
+
+</html>

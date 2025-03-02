@@ -1,0 +1,608 @@
+@font-face {
+    font-family: Bodono_Moda;
+    src: url(Fonts/Bodoni_Moda/OFL.txt);
+}
+@font-face {
+    font-family: Henny-Penny;
+    src: url(Fonts/Henny-Penny/OFL.txt);
+}
+@font-face {
+    font-family: open-sans;
+    src: url(Fonts/open-sans/sharefonts.net.txt);
+}
+@font-face {
+    font-family: Snowburst;
+    src: url(Fonts/Snowburst_One/OFL.txt);
+}
+
+h1 {
+    font-size: 50px;
+    font-family:  Bodoni_Moda;
+}
+p {
+    font-size: 20px;
+    font-family: open-sans;
+
+}
+
+/*Navbar*/
+nav {
+    background-color: #1a2e38;
+    opacity:.80;
+
+}
+.navbar {
+    justify-content: space-between;
+    
+
+}
+nav img {
+    height: 100px;
+}
+.navbar-nav .navbar-link {
+    color: white;
+    text-align: center;
+}
+.navbar-toggler-icon{
+    filter: invert(0);
+}
+.navbar-toggler {
+    border: 1px solid white;
+    background-color: white;
+}
+.navbar-toggler:hover{
+    color: #03B1F4;
+}
+#nav-item {
+    color: white;
+}
+#nav-item:hover{
+    color: #03B1F4;
+}
+#nav-link {
+    color: white !important;
+}
+#nav-link:hover, #nav-link:focus {
+    color: #03B1F4 !important;
+}
+header h1{
+    font-size: 50px;
+    padding-top: 50px;
+}
+#home h1 {
+    padding-top: 250px;
+    padding-bottom: 25px;
+    
+}
+
+#btn {
+    border: none;
+    font-weight: bold;
+    padding: 8px 16px;
+    transition: 0.3s;
+    color: #03B1F4;
+    background-color: white;
+    margin-left: 10px;
+}
+#btn:hover{
+    color: white;
+    background-color: #03B1F4;
+}
+header{
+    width: 100%;
+    height: 400px;
+}
+/* Default width for the Locations dropdown */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: flex;
+    margin-top: 0;
+    width: 300px; /* Set a wider width when hovered */
+    min-width: 250px; /* Adjusts the minimum width */
+    transition: width 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.dropdown-menu {
+    padding: 5px 0;
+    font-size: 14px;
+    width: 200px; /* Default width */
+    transition: width 0.3s ease-in-out;
+}
+
+/*background imgs*/
+#home header {
+    background: no-repeat  center url(images/home.jpeg);
+    background-size: cover;
+    text-align: center;
+    background-attachment: fixed;
+    color: white;
+    height: 1000px;
+    
+}
+#about header, #contact header{
+    background: no-repeat  center url(images/about-us-hero.jpeg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+
+}
+#adult_program header {
+    background: no-repeat  center url(images/lap-swimming.jpeg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+#swim_programs header {
+    background: no-repeat  center url(images/summer-swim-camps.jpeg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+#swimming_lessons header{
+    background: no-repeat  center url(images/which-lesson-is-best.jpeg);
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+
+
+/*footer*/
+.footer {
+    background: no-repeat center url(images/footer-bg.jpeg);
+    background-size: cover;
+}
+.footer-logo img {
+    margin: 50px;
+    max-width: 250px;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links .list-inline-item a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-contacts {
+    margin-bottom: 20px;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+.footer-contacts .col-md {
+    font-size: 14px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.footer-social {
+    margin-bottom: 20px;
+
+}
+
+.footer-social a {
+    font-size: 24px;
+    color: #000;
+    margin: 0 10px;
+}
+
+.footer-social a:hover {
+    color: #03B1F4;
+}
+
+.footer-partners img {
+    max-width: 100px;
+    margin: 10px;
+    min-width: fit-content;
+
+}
+
+.footer-bottom {
+    font-size: 14px;
+    color: #777;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*Form*/
+.modal-content {
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.modal-logo {
+    max-width: 100%;
+    margin: 0 auto 15px;
+    padding-bottom: 50px;
+}
+#tabs:hover {
+    color: #03B1F4;
+}
+/*Home Page*/
+#homeBox1 img{
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#homeBox2 {
+    background: url(images/home-hands-on-teaching.jpeg);
+    background-size: cover;
+    height: 500px;
+    min-height: fit-content;
+    font-family: Henny-Penny;
+}
+#info {
+    padding: 20px;
+}
+#homeBox3 {
+    background: url(images/home-our-locations-bg.jpeg);
+    background-size: cover;
+    min-height: fit-content;
+    color: white;
+
+}
+#homeBox3 img {
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+}
+#homeBox3 .col-6 {
+    text-align: center;
+    padding: 25px;
+    padding-bottom: 10px;
+
+}
+/*About Page*/
+#box1{
+    background: url(images/about-our-philosophy-bg.jpeg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    height: 300px;
+    min-height: fit-content;
+}
+#box1 h1 {
+    padding: 25px;
+
+}
+#box2{
+    background: url(images/about-we-do-a-pretty-good-job-bg.jpeg) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    height: 300px;
+    min-height: fit-content;
+}
+#box2 h1 {
+    padding: 25px;
+}
+#awards{
+    min-height: fit-content;
+    height: 50px;
+    text-align: center;
+
+}
+#awards h1 {
+    padding: 15px;
+    text-align: center;
+    font-size: 56px;
+}
+#awards img {
+    height: 200px;
+    margin: 15px;
+}
+/*Contact Page*/
+#contactBox1{
+    align-items: center;
+    padding: 50px;
+}
+.icon-box {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#contactBox2 {
+    align-items: center;
+}
+
+/* Style the hero content to be centered */
+.hero-content-contact {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: #fff;
+font-family: 'Bodoni Moda', serif;
+font-weight: 900;
+font-size: 50px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+}
+
+.contact-section .contact-message {
+text-align: center;
+margin: 20px auto;  /* 20px top and bottom, auto on sides centers the element */
+max-width: 600px;   /* Limits the width to 600px */
+font-size: 18px;
+color: #333;
+margin-top: 4rem;
+margin-bottom: 6rem;
+}
+
+
+/* Grid container for the email buttons */
+.email-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr); /* 4 columns for a 2x4 grid */
+grid-gap: 20px;
+row-gap: 60px;
+max-width: 800px; /* Adjust as needed */
+margin: 0 auto;   /* Center the grid container */
+margin-bottom: 40px;
+}
+
+/* Each grid item */
+.email-grid .grid-item {
+text-align: center;
+}
+
+/* The square button */
+.email-grid .grid-item button {
+width: 150px;  /* Set a fixed width */
+height: 150px; /* Ensures the button is square */
+border: none;
+background-color: #ffffff; /* Example color; adjust as needed */
+cursor: pointer;
+border-radius: 8px;  /* Optional: gives rounded corners */
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* horizontal offset, vertical offset, blur, color */
+}
+
+/* The label below each button */
+.email-grid .grid-item p {
+margin-top: 10px;
+font-size: 16px;
+font-weight: bold;
+color: #333;
+}
+
+.email-grid .grid-item button img {
+width: 100px; /* adjust to your desired size */
+height: auto; /* keeps the aspect ratio */
+}
+
+@media (min-width: 577px) and (max-width: 1199px) {}
+.email-grid .grid-item button {
+    width: clamp(80px, 15vw, 150px);  /* Minimum 80px, fluid scaling at 15vw, maximum 150px */
+    height: clamp(80px, 15vw, 150px); /* Keep it square */
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.email-grid .grid-item button img {
+    width: 73%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.hero-content-contact h1{
+    font-size: clamp(15px, 5vw, 50px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* SWIMMING LESSONS */
+#swimming-lessons header {
+  background-image: url('project 1 content/images/which-lesson-is-best.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 450px;
+}
+
+/* Style the hero content to be centered */
+.hero-content-swimming-lessons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 900;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+}
+
+.lesson-types {
+  padding: 40px 0;
+  background: #f8f8f8; /* Optional background color */
+}
+
+.lesson-types .content-container {
+  width: 80%;           /* Restrict container width */
+  margin: 0 auto;       /* Center the container horizontally */
+  padding: 20px;
+  text-align: left;
+  color: #333;
+}
+
+.lesson-types h1 {
+  margin-bottom: 6rem;
+  font-size: 30px;
+  font-family: 'Bodoni Moda', serif;
+  text-align: center;
+}
+
+.lesson-types .lesson h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 16px;
+  font-weight: bold;
+  /* h2 is bold by default, so additional styling for bold is optional */
+}
+
+.lesson-types .lesson p {
+  margin-bottom: 1rem;
+}
+
+.lesson-types .lesson .learn-more {
+  color: #51a5ff; /* Optional: style the 'Learn more' as a link color */
+  cursor: pointer; /* Indicates it's clickable, if desired */
+}
+
+
+@media screen and (max-width: 1199px) {
+  .hero-content-swimming-lessons h1{
+    font-size: clamp(15px, 5vw, 50px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+
+
+
+
+
+/* SWIM PROGRAMS */
+#swim-programs header {
+  background-image: url('project 1 content/images/summer-swim-camps.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 450px;
+}
+
+/* Style the hero content to be centered */
+.hero-content-swim-programs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 900;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+}
+
+.summer-swim-camps {
+  padding: 60px 0;
+  background: #ffffff; /* Optional background color; change as needed */
+  text-align: center;
+}
+
+.summer-swim-camps .content-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  color: #333;
+}
+
+/* Style the main heading */
+.summer-swim-camps h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: 'Bodoni Moda', serif;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Style the sub-heading */
+.summer-swim-camps h2 {
+  font-size: 36px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: 'Bodoni Moda', serif;
+  text-align: center;
+}
+
+/* Paragraph styling */
+.summer-swim-camps p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+
+/* Style the location list */
+.summer-swim-camps ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+
+.summer-swim-camps ul li {
+  display: block;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero-content-swim-programs h1{
+    font-size: clamp(15px, 5vw, 50px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+
+
+
+/* ADULT PROGRAMS */
+#adult-programs header {
+  background-image: url('project 1 content/images/lap-swimming.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 450px;
+}
+
+/* Style the hero content to be centered */
+.hero-content-adult-programs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 900;
+  font-size: 50px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+}
+
+@media screen and (max-width: 1199px) {
+  .hero-content-adult-programs h1{
+    font-size: clamp(15px, 5vw, 50px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
